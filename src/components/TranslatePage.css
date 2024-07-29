@@ -1,0 +1,57 @@
+/* src/components/TranslatePage.css */
+.translate-page {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    background-color: #385e42;
+    padding: 10px;
+  }
+  
+  .navbar a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+  }
+  
+  .logout-button {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  .translate-section {
+    margin-top: 50px;
+  }
+  
+  .translate-controls {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .translate-controls button, .translate-controls select {
+    margin: 0 10px;
+    padding: 10px 20px;
+    font-size: 1rem;
+  }
+  
+  .translate-controls select {
+    background-color: #8fa34c;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .document-preview {
+    border: 1px solid #ccc;
+    padding: 20px;
+    text-align: left;
+    background-color: #f9f9f9;
+  }
+  

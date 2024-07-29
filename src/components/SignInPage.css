@@ -1,0 +1,47 @@
+/* src/components/SignInPage.css */
+.signin-page {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .signin-section {
+    display: inline-block;
+    background-color: #385e42;
+    padding: 40px;
+    border-radius: 10px;
+    color: white;
+  }
+  
+  .signin-section h1 {
+    font-size: 2rem;
+  }
+  
+  .signin-section form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .signin-section input {
+    margin: 10px 0;
+    padding: 10px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  .signin-section button {
+    padding: 10px;
+    font-size: 1rem;
+    background-color: #8fa34c;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .signin-section a {
+    color: white;
+    margin-top: 10px;
+    text-decoration: none;
+  }
+  

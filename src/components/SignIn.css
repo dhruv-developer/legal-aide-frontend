@@ -3,6 +3,7 @@
     justify-content: center;
     align-items: center;
     height: 100vh;
+    /* background-color: #6B8E23; */
     flex-direction: column;
   }
   
@@ -16,6 +17,7 @@
   
   .signin-form label {
     display: block;
+    background-color: #6B8E23;
     margin-bottom: 10px;
     font-size: 14px;
   }
@@ -23,6 +25,7 @@
   .signin-form input {
     width: 100%;
     padding: 10px;
+    /* background-color: #6B8E23; */
     margin-bottom: 20px;
     border: none;
     border-radius: 4px;
@@ -45,6 +48,7 @@
   .signin-form a {
     color: #e5e5e5;
     text-decoration: none;
+    background-color: #6B8E23;
   }
   
   .signin-form a:hover {
@@ -53,5 +57,6 @@
   
   .signin-form p {
     margin-top: 10px;
+    background-color: #6B8E23;
   }
   

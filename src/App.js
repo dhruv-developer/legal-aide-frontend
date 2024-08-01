@@ -12,7 +12,7 @@ const App = () => {
             <Header />
             <Welcome />
             <Translate />
-            <SignIn />
+            {/* <SignIn /> */}
         </div>
     );
 };

@@ -20,11 +20,11 @@ const Translate = () => {
     }
     const formData = new FormData();
     formData.append('file', file);
-    formData.append('query', question?question:'Summarise the document');
+    formData.append('query', question || 'Summarise the document');
     formData.append('translation_language', language);
 
     try {
-      const response = await axios.post('http://localhost:8000/process_pdf/', formData, {
+      const response = await axios.post('https://legal-backend-aide.onrender.com/process_pdf/', formData, {
         headers: { 'Content-Type': 'multipart/form-data' },
       });
       setResult(response.data.translated_answer || 'No translation available.');
@@ -45,7 +45,7 @@ const Translate = () => {
     formData.append('query', question || 'Summarize the document');
 
     try {
-      const response = await axios.post('http://localhost:8000/process_pdf/', formData, {
+      const response = await axios.post('https://legal-backend-aide.onrender.com/process_pdf/', formData, {
         headers: { 'Content-Type': 'multipart/form-data' },
       });
       setResult(response.data.answer || 'No summary available.');
@@ -66,7 +66,7 @@ const Translate = () => {
     formData.append('query', 'Simplify the language of the document');
 
     try {
-      const response = await axios.post('http://localhost:8000/process_pdf/', formData, {
+      const response = await axios.post('https://legal-backend-aide.onrender.com/process_pdf/', formData, {
         headers: { 'Content-Type': 'multipart/form-data' },
       });
       setResult(response.data.answer || 'No simplified version available.');
@@ -87,7 +87,7 @@ const Translate = () => {
     formData.append('query', question);
 
     try {
-      const response = await axios.post('http://localhost:8000/process_pdf/', formData, {
+      const response = await axios.post('https://legal-backend-aide.onrender.com/process_pdf/', formData, {
         headers: { 'Content-Type': 'multipart/form-data' },
       });
       setResult(response.data.answer || 'No answer available.');

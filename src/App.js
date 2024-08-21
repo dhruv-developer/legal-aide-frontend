@@ -1,22 +1,3 @@
-<<<<<<< HEAD
-// App.js
-import React from 'react';
-import SignIn from './components/SignIn';
-import Translate from './components/Translate';
-import Welcome from './components/Welcome';
-import Header from './components/Header';
-
-
-const App = () => {
-    return (
-        <div>
-            <Header />
-            <Welcome />
-            <Translate />
-            {/* <SignIn /> */}
-        </div>
-    );
-=======
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Header from './components/Header';
@@ -39,7 +20,6 @@ const App = () => {
       </Routes>
     </Router>
   );
->>>>>>> master
 };
 
 export default App;
